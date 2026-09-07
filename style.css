@@ -18,6 +18,7 @@ body {
 .main-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 80px;
     max-width: 1000px;
     margin: auto;
@@ -27,6 +28,8 @@ body {
 
 /* 3. Left Column (Branding Section) */
 .brand-section {
+    display: flex;
+    flex-direction: column;
     max-width: 500px;
     margin-bottom: 80px;
 }
@@ -35,5 +38,125 @@ body {
     color: #1877f2;
     font-size: 56px;
     font-weight: bold;
-    letter-spacing: -1px;
+    letter-spacing: -1.5px;
+    margin-bottom: 0px;
+}
+
+.tagline {
+    font-size: 28px;
+    line-height: 32px;
+    margin-top: 0px;
+    font-weight: normal;
+}
+
+/* 4. Right Column (Login Card & Form) */
+.login-section {
+    width: 396px;
+    text-align: center;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 396px;
+}
+
+.card form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; 
+}
+
+.card input {
+    height: 52px;
+    padding: 14px 16px;
+    font-size: 17px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    outline: none;
+}
+
+.card input:focus {
+    border-color: #1877f2;
+    box-shadow: 0 0 0 2px #e7f3ff;
+}
+
+/* 5. Buttons & Links */
+.btn-login {
+    background-color: #1877f2;
+    color: #ffffff;
+    height: 48px;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+
+.forgot-link {
+    color: #1877f2;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 4px 0;
+}
+
+.forgot-link:hover {
+   text-decoration: underline;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #dadde1;
+    margin: 16px 0;
+}
+
+.btn-create {
+    background-color: #43b72a;
+    color: #ffffff;
+    height: 48px;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: center;
+    padding: 0 16px;
+    margin-top: 6px;
+}
+
+.create-page-text {
+    font-size: 14px;
+    margin-top: 28px;
+}
+
+.create-page-text a {
+    color: #1c1e21;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.create-page-text a:hover {
+    text-decoration: underline;
+}
+
+/* 6. Footer Section */
+.footer {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer hr {
+    border: none;
+    border-top: 1px solid #dddfe2;
+}
+
+.copyright {
+    margin-top: 10px;
 }
